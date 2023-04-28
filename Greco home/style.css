@@ -1,0 +1,568 @@
+:root{
+    ---pink:#e84393;
+  
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  outline: none; border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: .2s linear; 
+} 
+html{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+  overflow-x: hidden;
+  background-color: #b3adad11;
+}  
+section{
+     padding:2rem 9%;
+}
+header{
+   position: fixed;
+    top: 0;left: 0;right: 0;
+    background: #fff; 
+    padding: 2rem 9% ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.1); 
+
+} 
+header .logo{
+    font-size: 3rem;
+    color: #333;
+    font-weight: bolder;
+} 
+header .navbar  a{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #666; 
+} 
+header .navbar a:hover{
+    color: var(---pink);
+} 
+header .icons a{
+    font-size: 3rem;
+    color: #333;
+    margin-left: 1.5rem;
+}  
+header .icons a:hover{
+    color:var(---pink);
+} 
+ 
+.menu {
+  list-style-type: none ; 
+  padding: 0;
+  display: flex;
+}   
+
+.ativar-dropdown {
+  display: inline;  
+  position: relative;
+  
+} 
+.navbar ul li a{
+  color: #333; 
+  text-decoration: none;
+  padding: 10px; 
+  display: inline-block;
+
+}
+  
+
+.menu-dropdown{
+  display: none;
+  position: absolute;
+  list-style: none;
+  border-radius: 5%;
+
+  background: #fffffff5;
+}
+.navbar ul ul li a:hover{
+  color:#df3889;
+}
+.navbar ul li:hover ul{
+  display: block; 
+}
+
+
+
+header #toggler{
+    display: none;
+} 
+header .fa-bars{
+    font-size: 3rem;
+    color: #333;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    border: .1rem solid rgba(0, 0, 0, .3);
+    display: none;
+} 
+   
+.home{
+    display:flex;
+    align-items: center;
+    min-height: 100vh;
+    background:url(images/modelo.shein.jpg) no-repeat;
+    background-size:cover;
+    background-position:center; 
+    margin-top:80px ;
+
+}
+
+.home .content{
+     max-width: 50rem;
+}
+
+.home .content h3{
+     font-size:6rem;
+     color:#333;
+
+
+}
+.home .content span{
+    font-size: 3.5rem;
+    color:var(---pink);
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+    
+.home .content p{
+    font-size: 1.6rem;
+    color:#555;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+.home .content .btn{
+  font-size: 1.1rem; 
+  background-color:#686767 ; 
+  align-items: center; 
+  padding: 6px;  
+  color: #fff; 
+  border-radius: 5px; 
+  font-family: system-ui;
+
+}
+
+
+.heading{
+     text-align:center;
+     font-size: 4rem;
+     color: #333;
+     padding:1rem;
+     margin:2rem 0;
+     background:rgba(255,51,153,.05);
+}
+
+.heading span{
+    color:var(---pink);
+}
+.heading H1{
+  font-size:  2.5rem;  
+  display: flex;
+  justify-content: center; 
+  padding: 3rem 0;  
+  height: 2px; 
+  
+  
+} 
+ 
+ .product{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px , auto));
+  gap: 3rem; 
+  margin-left: 50px; 
+  margin-top: 50px;
+ } 
+ .roupa{
+  position: relative;
+  transition: all .40s;
+ } 
+ .roupa img{
+  width: 90%;
+  height: auto;
+  transition: all .40s;
+ } 
+ .roupa img:hover{
+  transform: scale(0.9);
+ } 
+.product-text h5{
+  position: absolute;
+  top: 13px;
+  left: 13px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  background-color: #27b737;
+  padding: 3px 10px;
+  border-radius: 2px;
+} 
+.heart-icons a{
+  position: absolute;
+  left: 75%;
+  font-size: 17px; 
+  color: #333;
+} 
+.heart-icons :hover{
+  color: #e01f79;
+} 
+.star a {
+  color: #FF8c00; 
+
+}
+.price h4{
+  color: #111;
+  font-size: 14px;
+  text-transform: capitalize;
+  font-weight: 400;
+} 
+.price p{
+  color: #151515;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/*recommend-product*/
+.destaque-product{
+  margin-top: 50px;
+  display: flex;
+  margin-left: 30px;
+  
+}
+ .recomment{  
+  width: 90%;
+  margin-right: 50px; 
+  position: relative;
+  transition: all .40s;  
+  
+  
+ } 
+ .recomment img{
+  width: 90%;
+  height: 80%; 
+  transition: all .40s;
+  
+  
+ } 
+ .recomment img:hover{
+  transform: scale(0.9);
+ } 
+ .heart a{
+  position: absolute;
+  left: 80%;
+  font-size: 17px; 
+  color: #333;
+} 
+.heart :hover{
+  color: #e84393;
+} 
+.center-text h2{
+  color:#333;
+  font-size: 26px;
+  text-transform: capitalize;
+  margin-top: 50px; 
+
+ 
+ }
+ .center-text span{
+  color: #e84393;
+ }
+
+
+
+/*single product*/
+.section-p1 {
+  display: flex;
+  margin-top: 80px; 
+}
+
+.section-p1 .single-product-img{
+  width: 30%;
+  margin-right: 50px;
+
+} 
+.small-img-group{
+  display: flex;
+  justify-content: space-between;
+}
+.small-img-col{
+  flex-basis: 24%;
+  cursor: pointer;
+} 
+.section-p1 .single-product-details{
+  width: 80%;
+  padding-top: 30px; 
+  
+}
+
+.section-p1 .single-product-details h4{
+  font-size: 19px;
+  color: #e84393;
+  margin-bottom: -20px;
+
+} 
+.section-p1 .single-product-details h3{
+  font-size: 20px;
+  padding: 30px 0 10px 0;
+  font-weight: 300;  
+
+
+}
+
+.section-p1 .single-product-details select{
+  display: block;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  background-color: #c01d1d11;
+}
+.section-p1 .single-product-details input{
+  width: 50px;
+  height: 47px;
+  padding-left: 10px;
+  font-size: 16px;
+  margin-right: 10px; 
+  background-color: #66666611;
+}  
+.section-p1 .single-product-details input:focus{
+  outline: none;
+}
+.section-p1 .single-product-details button{
+  background: #e44ac3;
+  color: #fff;
+  width: 20%;
+  height: 6%;
+  font-family: system-ui;
+} 
+
+.section-p1 .single-product-details span{
+  font-size: 16px;
+  margin-top: 50px;
+} 
+.section-p1 .single-product-details h2{
+  padding: 40px 0 20px 0; 
+  
+  
+}
+
+.contexto{
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 100px;
+}
+.pagination{
+ margin-left: 60%;
+} 
+.pagination a{
+  text-decoration: none;
+  background-color: #111; 
+  color: #fff; 
+  padding: 13px 17px;
+  border-radius: 50px;
+  font: weight 7px;
+}
+
+.footer{
+  display: flex;
+  margin-top: 80px;
+  margin-left: 60px; 
+  background-color: #e843932c; 
+  width: 90%;
+}
+.footer .imagem{
+  margin-left: 10%;
+ 
+
+}
+
+
+
+  
+/*
+
+.Marcas{
+  margin-top: 10rem;
+  cursor: pointer;
+  align-items: center;
+  text-align: center;
+}
+
+.Marcas img{
+  width: 180px;
+  height: auto;
+  background-color: aliceblue;
+}
+*/
+
+#Contato{
+  display: flex;
+  gap: 5rem;
+  justify-content: space-around;
+  background-color: #111;
+  padding: 8rem;
+  margin-top: 5rem;
+  display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+}
+
+.meio-contato h3{
+  color: #fff;
+  font-size: 23px;
+  margin-bottom: 1.6rem;
+}
+
+.meio-contato h5{
+  font-size: 15px;
+  font-weight: 600;
+  color: #555;
+}
+
+.meio-contato li{
+  margin-bottom: 15px; 
+  
+}
+
+.meio-contato li a{
+  display: block;
+  color: #555;
+  font-weight: 600;
+  transition: all .35s ease;
+  
+} 
+/*
+.last-text{
+  text-align: center;
+  background-color: #555;
+  color: #fff;
+} 
+*/
+@media (max-width:991px){
+  html{
+      font-size: 55%;
+  }  
+  header{
+      padding: 2rem;
+
+  }
+  section{
+   padding: 2rem ;
+
+  }
+
+  .home{
+    background-position:right;
+  
+  }
+} 
+
+@media(max-width:768px){
+
+header .fa-bars{
+  display:block;
+}
+
+header .navbar{
+position:absolute;
+top:100%; left:0; right:0;
+background:#eee;
+border-top:.1rem solid rgba(0,0,0,.1) ;
+clip-path: polygon(0 0, 100% 0,100% 0,0 0);
+}
+
+header #toggler:checked ~.navbar{
+   clip-path: polygon(0 0, 100% 0, 100% 100%,0% 100%);
+}
+
+.menu {
+  display: block;
+  text-align: center;
+}  
+
+.menu-dropdown{
+  position: relative;
+  max-height: 200px;
+  overflow-y: scroll;
+
+}
+
+
+
+header .navbar a{
+  margin:1.5rem;
+  padding:1.5rem;
+   background:#fff;
+    border:1rem solid rgba(0,0,0,.1);
+    display:block;
+}
+
+.home .content h3{
+    font-size:5rem;
+
+
+
+}
+.section-p1 {
+  display: grid;
+  justify-items: center;
+}
+.section-p1 .single-product-img{
+  width: 60%;
+
+} 
+
+.home .content span{
+  font-size:2.5rem;
+}
+
+ 
+.icons-container .icons h3{
+  color:#333;
+  padding-bottom: 5rem;
+  font-size:1.5rem;
+
+}
+
+  
+.icons-container .icons span{
+   color:#555;
+   font-size:1.3rem;
+   
+
+}
+
+
+
+
+}
+@media (max-width:339px){
+  html{
+      font-size: 50%;
+     
+  }  
+  
+ .heading{
+     font-size: 3rem;
+
+ }   
+
+ .roupa{
+  position: absolute;  
+  display: inline-block;
+ }
+
+ section .product .roupa{ 
+  padding:2rem 9%;
+  position: absolute;  
+  display: inline;
+
+ } 
+ 
+}
